@@ -6,7 +6,10 @@ const crearArchivo = async(base = 1, l, h) => {
     let salida = '';
     let consola = '';
 
-    console.log(`---------------------Tabla del ${base}-----------------------`.rainbow);
+    console.log(`*******************************`.rainbow);
+    console.log(`*****     Tabla del ${base}     *****`.rainbow);
+    console.log(`*******************************`.rainbow);
+
     for (let i = 1; i <= h; i++) {
         salida += `${base} x ${i} = ${i*base}\n`;
         consola += `${colors.green(base)} x ${colors.green(i)} = ${i*base}\n`;
